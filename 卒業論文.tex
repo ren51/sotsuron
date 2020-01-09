@@ -1,0 +1,180 @@
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[a4j,11pt]{jsarticle}
+
+%%%　研究室テンプレ　%%%
+\usepackage{newtxtext}		%アルファベットなどをTimesNewRomanで記述
+%\usepackage{newpxtext}	%アルファベットなどをPalatinoで記述する
+						%両方共コメントアウトするとComputerModernで記述される
+\usepackage{okumacro}		%日本語を扱う上で便利な機能の集まり．
+\usepackage{graphicx}		%画像を貼り付ける際に使う．
+\usepackage{url}			%文章中のURLからリンクできるようにする．
+\usepackage{tabularx}		%表を作る際に使う
+\usepackage{colortbl}		%表に色を付ける場合に使う
+%\usepackage{float}			%図を貼り付ける位置を調整する際に使う（位置指定にH（強制的にここ）が使える）
+\usepackage{makeidx}		%索引を作る際に使う
+\usepackage{fouriernc}		%数式のフォントに格好良いのを使う
+\usepackage[deluxe]{otf}		%明朝体の太字を使う
+\usepackage{mediabb}		%PDFファイルの内部情報自動的に取得する
+\usepackage{amsmath}		%アメリカ数学会による数学パッケージ
+\usepackage{moreverb}		%プログラムなどを取り込む際に使う
+%\usepackage{verbatim}		%なんだっけ?
+%\usepackage				%上下左右の余白を一律で設定（下行で幅の指定）
+%[margin=2cm]{geometry}	%幅の指定
+\usepackage				%上下左右の余白をそれぞれ設定（下行で幅の設定）
+[left=25mm, right=18mm, top=18mm, bottom=18mm]{geometry} %幅の指定
+\usepackage{dcolumn}		%表内の数字を小数点やカンマで揃える
+\usepackage{ascmac}		%囲み線（boxnoteなど）を使う
+\usepackage{color}			%文字などに色を付ける際に使う
+\usepackage{eclbkbox}		%2ページ以上にまたがる囲み線を使う
+\usepackage{itembkbx}		%ちょっと賢い囲み線（itemboxやboxnote）を使う
+\usepackage{enumerate}		%箇条書きを装飾する際に使う
+\usepackage{multicol}		%3段組以上の多段組を扱うほか，図を3つ以上横に並べる場合にも使用する
+
+%%%　その他　%%%
+\graphicspath{{fig/}}			%グラフィックパス
+\renewcommand{\headfont}{\bfseries} %章タイトルなどを明朝体にする
+
+%%%　追加　%%%
+\usepackage{comment}		%複数行コメントアウト
+\usepackage{multirow}		%表結合
+\usepackage{here}			%図や表などを強制的に出力
+\usepackage{fancybox}		%四角で囲む
+\usepackage{boxedminipage}	%箇条書きを四角で囲む
+\usepackage{caption}		%キャプションの設定
+\usepackage{longtable}		%表がページをまたがるときの処理
+\usepackage{slashbox}		%表に斜線を入れる
+% \usepackage{emathT}		%表に斜線を入れる
+\usepackage{framed}		%箇条書きを枠で囲む
+\newcolumntype{I}{!{\vrule width 1.5pt}}% 縦線の一部を太くする（Iで指定する）
+\newlength\savedwidth		% 横線の一部を太くする（wlineで範囲を指定する）
+\newcommand{\wcline}[1]{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 1.5pt} \cline{#1}
+\noalign{\global\arrayrulewidth\savedwidth}}
+\usepackage{lscape}			% 表を横向きに表示
+\def\MARU#1{\leavevmode \setbox0\hbox{$\bigcirc$}%数字を丸で囲む
+\copy0\kern-\wd0 \hbox to\wd0{\hfil{#1}\hfil}}
+
+%%%　論文用　%%%
+\makeatletter											%プリアンブルで定義開始
+\renewcommand{\presectionname}{第}
+\renewcommand{\postsectionname}{章}
+\renewcommand{\appendixname}{付録}
+\def\section		{\@startsection {section}		{1}{\z@}{3.5ex plus -1ex minus -.2ex}{2.3 ex plus .2ex}{\Large\bf}}		%章の文字サイズ
+\def\subsection		{\@startsection {subsection}	{1}{\z@}{3.5ex plus -1ex minus -.2ex}{2.3 ex plus .2ex}{\Large\bf}}		%節の文字サイズ
+\def\subsubsection	{\@startsection {subsubsection}{1}{\z@}{3.5ex plus -1ex minus -.2ex}{2.3 ex plus .2ex}{\large\bf}}		%項の文字サイズ
+\usepackage{caption}									%キャプション文字サイズ（大）
+\captionsetup[figure]{font=normalsize}
+\captionsetup[table]{font=normalsize}
+\captionsetup[equation]{font=normalsize}
+\renewcommand{\thefigure}{\thesubsection-\arabic{figure}}		%図の番号を"<章.節の番号> - <図の番号>" へ
+\renewcommand{\thetable}{\thesubsection-\arabic{table}}			%表の番号を"<章.節の番号> - <表の番号>" へ
+\renewcommand{\theequation}{\thesubsection-\arabic{equation}}	%数式の番号を"<章.節の番号> - <数式の番号>" へ
+\@addtoreset{figure}{subsection}							%章と節が進むごとに図の番号をリセットする
+\@addtoreset{table}{subsection}							%章と節が進むごとに表の番号をリセットする
+\@addtoreset{equation}{subsection}							%章と節が進むごとに数式の番号をリセットする
+% \@addtoreset{footnote}{subsection}						%章と節が進むごとに注釈の番号をリセットする
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}				%注釈の設定
+\makeatother											%プリアンブルで定義終了
+%\fontsize{20pt}{15pt}\selectfont	% フォントサイズ・行間
+
+%%%　コピペ　%%%
+
+%PDFの画像を挿入する
+%\begin{figure}[!htb] \centering
+%\includegraphics[width=12cm]{***.pdf}
+%\caption{キャプション}
+%\label{fig:name} \end{figure}
+
+%表を挿入する
+%\begin{table}[h]
+%\caption{キャプション}
+%\begin{center} \begin{tabular}{c||c|c}	%右揃え: r　中央揃え: c　右揃え: l　縦線: | 
+%\hline
+%安定性 & 安定 & 不安定 \\\hline\hline
+%内的 & 能力 & 努力 \\\hline
+%外的 & 課題の困難度 & 運 \\\hline
+%\multicolumn{3}{l}{*安定性：時間の経過による変化の度合い}\\
+%\end{tabular} \end{center} \end{table}
+
+%%%　以下から本文　%%%
+\begin{document}
+
+
+
+%表紙
+\thispagestyle{empty}			%ページ番号削除
+
+\setcounter{tocdepth}{3}
+\begin{center}
+
+\huge 平成29年度　卒業論文
+\\[100pt]
+\HUGE 授業におけるシミュレータ教材の効果的な利用方法の提案
+\\[120pt]
+\huge 指導教員 須田 宇宙 准教授
+\\[60pt]
+千葉工業大学 情報ネットワーク学科\\
+須田研究室
+\\[60pt]
+1432088 \hspace{70pt} 高橋 駿仁
+\\[75pt]
+
+\end{center}
+\begin{flushright}
+
+\huge 提出日 2018年1月29日
+
+\end{flushright}
+
+
+
+%目次
+\newpage
+\pagestyle{empty}
+\normalsize
+\tableofcontents
+\newpage
+%\listoftables
+\listoffigures
+
+
+
+%本文
+\newpage
+\pagenumbering{arabic}
+\pagestyle{plain}
+%\setcounter{page}{1}	%ページ番号1
+
+\input{01-syogen}
+
+\newpage
+\input{02-teach}
+
+\newpage
+\input{03-ict}
+
+\newpage
+\input{11-gakusyu}
+
+%\newpage
+%\input{04-elearning}
+
+\newpage
+\input{05-digital}
+
+\newpage
+\input{06-simulation}
+
+\newpage
+\input{07-idea}
+
+\newpage
+\input{08-ketsugen}
+
+\newpage
+\input{09-syaji}
+
+\newpage
+\input{10-sankou}
+
+\end{document}
