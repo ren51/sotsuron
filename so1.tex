@@ -1,0 +1,99 @@
+\documentclass[a4j,11pt]{jsarticle}
+\usepackage{semi}
+
+\makeatletter % プリアンブルで定義開始
+
+% 図番号を"<章節などの番号番号> - <図番号>" へ
+\renewcommand{\thefigure}{\thesubsection-\arabic{figure}}
+\renewcommand{\thetable}{\thesubsection-\arabic{table}}
+% 章が進むごとに図番号をリセットする
+\@addtoreset{figure}{subsection}
+\@addtoreset{table}{section}
+
+\makeatother % プリアンブルで定義終了
+
+\renewcommand{\headfont}{\bfseries} %章タイトルなどを明朝体にする
+
+\makeindex
+\begin{document}
+\definecolor{cellcolor}{rgb}{ 1, .90, .90}
+\definecolor{rowcolor}{rgb}{.85, .85, 1}
+\setcounter{tocdepth}{3}
+\thispagestyle{empty}
+\begin{center}
+
+\huge
+2020年度　卒業論文\\[60pt]
+\HUGE
+山田太郎物語とその続き\\
+主演：なすび\\[65pt]
+\huge
+指導教員 須田 宇宙 准教授\\[40pt]
+千葉工業大学 情報ネットワーク学科\\[10pt]
+須田研究室\\[40pt]
+1632８８８ \hspace{70pt} 田中　中田\\[110pt]
+\end{center}
+\begin{flushright} 
+\huge
+
+\textcolor{white}{文字}
+
+\textcolor{white}{文字}
+
+提出日 2020年1月25日
+\end{flushright}
+\newpage
+\thispagestyle{empty}
+\large
+% 目次
+\tableofcontents
+
+\newpage
+%表目次
+\listoftables
+%図目次
+\listoffigures
+
+\begin{comment}
+
+\end{comment}
+\newpage
+
+
+\newpage
+
+\subsection{提案手法}
+\subsection{ケプストラム法}
+\subsection{逆畳み込み}
+
+\newpage
+
+\section{実験と検証}
+\subsection{調査目的と調査方法}
+\subsection{回答の集計と効果の検証}
+\subsection{考察}
+
+\newpage
+\section{結言}
+
+\newpage
+\section*{謝辞}
+\addcontentsline{toc}{section}{謝辞}
+ここに研究の謝辞．主にご協力いただいた方など．
+
+\newpage
+\bibliographystyle{jplain}
+\addcontentsline{toc}{section}{参考文献}
+\begin{thebibliography}{99}
+
+\bibitem{oka1}国土技術センター,"自然災害の多い国",http://www.jice.or.jp/knowledge/japan/commentary09
+\bibitem{oka2}佐藤　由希子，"インパルス応答を用いた反射音除去のための一提案", 千葉工業大学卒業論文, 2014
+\bibitem{oka3}小泉　宣夫,"基礎音響・オーディオ学"，コロナ社 2005 36-38頁
+
+\end{thebibliography}
+
+\newpage
+\section*{付録}
+\addcontentsline{toc}{section}{付録}
+
+\end{document}
