@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2019.4.12)  17 JAN 2020 18:44
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2019.4.12)  17 JAN 2020 18:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -162,39 +162,66 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 31.
- (./sotu.toc
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    Try loading font information for U+msa on input line 3.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 3.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1])
+ (./sotu.toc)
 \tf@toc=\write3
 \openout3 = `sotu.toc'.
 
- [2]
-[1]
+ [1] [1]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 52.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 53.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 53.
+
+
+LaTeX Warning: Citation `ren1' on page 2 undefined on input line 53.
+
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 58.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
- [2]
+
+
+LaTeX Warning: Reference `fig:a' on page 2 undefined on input line 70.
+
+[2]
 File: outline.pdf Graphic file (type pdf)
 <outline.pdf>
  [3]
-[4] [5] [6] [7] [8] [9] [10] [11]
+
+LaTeX Warning: Citation `ren2' on page 4 undefined on input line 86.
+
+[4]
+
+LaTeX Warning: Citation `ren3' on page 5 undefined on input line 109.
+
+[5]
+
+LaTeX Warning: Citation `ren4' on page 6 undefined on input line 117.
+
+
+LaTeX Warning: Citation `ren5' on page 6 undefined on input line 117.
+
+[6] [7]
+
+LaTeX Warning: Citation `ren6' on page 8 undefined on input line 139.
+
+[8] [9] [10] [11]
+LaTeX Font Info:    Try loading font information for U+msa on input line 180.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 180.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 Underfull \hbox (badness 10000) in paragraph at lines 182--184
 []\JY1/mc/m/n/12 堀 一成\OT1/cmr/m/n/12 , \JY1/mc/m/n/12 坂尻 彰宏\OT1/cmr/m/n/
 12 :"\JY1/mc/m/n/12 阪大生のためのアカデミ ッ クライテ ィ ング\OT1/cmr/m/n/12 "
@@ -226,14 +253,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--190
 /cmtt/m/n/12 https : / / www . mindmap-[]school . jp / mindmap /
  []
 
-[12] (./sotu.aux) ) 
+[12] (./sotu.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1733 strings out of 493281
- 20435 string characters out of 6145041
- 90510 words of memory out of 5000000
- 5664 multiletter control sequences out of 15000+600000
+ 1734 strings out of 493281
+ 20441 string characters out of 6145041
+ 87510 words of memory out of 5000000
+ 5665 multiletter control sequences out of 15000+600000
  17005 words of font info for 68 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 27i,4n,27p,540b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,4n,27p,540b,352s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotu.dvi (15 pages, 29716 bytes).
+Output written on sotu.dvi (14 pages, 21956 bytes).
