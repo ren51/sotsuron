@@ -17,6 +17,7 @@
 \contentsline {subsection}{\numberline {3.4}マインドマップ}{6}
 \contentsline {section}{\numberline {4}実装技術}{7}
 \contentsline {subsection}{\numberline {4.1}PWAとは}{7}
+\contentsline {subsection}{\numberline {4.2}PWAの利用例}{7}
 \contentsline {section}{\numberline {5}本研究で開発したツールの概要}{8}
 \contentsline {subsection}{\numberline {5.1}実装理由}{8}
 \contentsline {subsection}{\numberline {5.2}開発言語について}{8}
@@ -26,7 +27,6 @@
 \contentsline {subsubsection}{\numberline {5.3.3}論理的な構成の整理}{9}
 \contentsline {subsubsection}{\numberline {5.3.4}参考文献の管理}{9}
 \contentsline {subsection}{\numberline {5.4}利用方法}{10}
-\contentsline {subsubsection}{\numberline {5.4.1}画面構成}{10}
 \contentsline {section}{謝辞}{11}
-\contentsline {section}{参考文献}{12}
+\contentsline {section}{参考文献}{11}
 \contentsline {section}{付録}{12}

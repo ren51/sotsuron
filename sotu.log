@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2019.4.12)  19 JAN 2020 18:54
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2019.4.12)  19 JAN 2020 19:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -194,46 +194,46 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 File: outline.pdf Graphic file (type pdf)
 <outline.pdf>
  [3] [4]
-[5] [6] [7] [8] [9] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 178--180
+[5] [6] [7] [8] [9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 179--181
 []\JY1/mc/m/n/12 堀 一成\OT1/cmr/m/n/12 , \JY1/mc/m/n/12 坂尻 彰宏\OT1/cmr/m/n/
 12 :"\JY1/mc/m/n/12 阪大生のためのアカデミ ッ クライテ ィ ング\OT1/cmr/m/n/12 "
 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--180
+Underfull \hbox (badness 10000) in paragraph at lines 179--181
 \OT1/cmtt/m/n/12 https : / / ir . library . osaka-[]u . ac . jp / repo / ouka /
  all / 27153 / Academic %
  []
 
 
-Underfull \hbox (badness 1231) in paragraph at lines 180--182
+Underfull \hbox (badness 1231) in paragraph at lines 181--183
 []\JY1/mc/m/n/12 山本　浩\OT1/cmr/m/n/12 : "TeX \JY1/mc/m/n/12 を使 っ た論文作
 成方法\OT1/cmr/m/n/12 ",2000 \JY1/mc/m/n/12 年 \OT1/cmr/m/n/12 103 \JY1/mc/m/n/
 12 巻 \OT1/cmr/m/n/12 984 \JY1/mc/m/n/12 号 \OT1/cmr/m/n/12 770-773.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--182
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
 \OT1/cmtt/m/n/12 https : / / www . jstage . jst . go . jp / article / jsmemag /
  103 / 984 / 103 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--186
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
 []\OT1/cmr/m/n/12 "\JY1/mc/m/n/12 マインドマ ッ プの学校\OT1/cmr/m/n/12 " $\OT1
 /cmtt/m/n/12 https : / / www . mindmap-[]school . jp / mindmap /
  []
 
 
-Underfull \hbox (badness 7221) in paragraph at lines 188--190
+Underfull \hbox (badness 7221) in paragraph at lines 189--191
 []\JY1/mc/m/n/12 　\OT1/cmr/m/n/12 "\JY1/mc/m/n/12 早稲田ウ ィ ークリ ー\OT1/cm
 r/m/n/12 , \JY1/mc/m/n/12 特集\OT1/cmr/m/n/12 " $\OT1/cmtt/m/n/12 https : / / w
 ww . waseda . jp / inst / weekly /
  []
 
-[12] (./sotu.aux) ) 
+[11] [12] (./sotu.aux) ) 
 Here is how much of TeX's memory you used:
  1735 strings out of 493281
  20447 string characters out of 6145041
@@ -241,6 +241,6 @@ Here is how much of TeX's memory you used:
  5666 multiletter control sequences out of 15000+600000
  17005 words of font info for 68 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 27i,4n,27p,540b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,4n,27p,675b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotu.dvi (14 pages, 29864 bytes).
+Output written on sotu.dvi (14 pages, 30480 bytes).
