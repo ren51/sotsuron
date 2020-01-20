@@ -31,6 +31,13 @@
 \tableofcontents%目次
 \newpage
 \pagenumbering{arabic}
+\listoffigures
+\thispagestyle{empty}
+\clearpage
+\addtocounter{page}{-1}
+
+\newpage
+
 \section{緒言}
 %目次を作る際は\verb+\tableofcontents+ と打ちます。\\
 %新しいページに区切るときは\verb+\newpage+ と打ちます
@@ -66,17 +73,16 @@
 
 \subsubsection{アウトラインの作成する}
 下調べが終わり論文のテーマを決めることができた場合次に,作成する文章の骨組みである,アウトラインの作成を行う.紙に書き出すことやアウトラインプロセッサなどのソフトウェアを使用して,章や節で書く内容を箇条書きに近いかたちで書いていき,全体の文章構造を決めていく.またアウトラインの作成例を図\ref{fig:a}に示す.
-
-\subsubsection{執筆する}
-フォーマットやアウトラインをもとに,執筆を行う.アウトラインや整理した資料,行った実験や検証の結果をもとにアウトラインを更に細かく作成していき,アウトラインから文章を作成をしていく.そこで必要な情報があった際には調べ,アウトラインを修正し,文章作成を行う.また,文章の書き出しから完成まで,途中何度も書いた文章を添削,修正を行う必要がある.
-
 \begin{figure}[h]
 \begin{center}
- \includegraphics[scale=0.3]{outline.pdf}
+ \includegraphics[clip,width=100mm,height=160mm]{outline2.png}
 \end{center}
  \caption{アウトラインの作成例}
  \label{fig:a}
 \end{figure}
+\newpage
+\subsubsection{執筆する}
+フォーマットやアウトラインをもとに,執筆を行う.アウトラインや整理した資料,行った実験や検証の結果をもとにアウトラインを更に細かく作成していき,アウトラインから文章を作成をしていく.そこで必要な情報があった際には調べ,アウトラインを修正し,文章作成を行う.また,文章の書き出しから完成まで,途中何度も書いた文章を添削,修正を行う必要がある.
 \newpage
 
 \subsection{アカデミックライティングとは}
@@ -102,7 +108,15 @@
 \section{論文などの作成を支援するソフトウェアや手法の紹介}
 \subsection{アウトラインプロセッサ}
 アウトラインプロセッサとは,一般的には小説などの長文を書く際に利用されている.
-特徴として,見出しをつけ階層的に管理や位置の入れ替えなど行い,全体の構成を確認しながら文章の作成を支援するソフトウェアである.
+特徴として,見出しをつけ階層的に管理や位置の入れ替えなど行い,全体の構成を確認しながら文章の作成を支援するソフトウェアである.実際のアウトラインプロセッサの１つであるDnalistの使用例を図\ref{fig:b}に示す.
+\begin{figure}[H]
+\begin{center}
+ \includegraphics[clip,width=150mm,height=130mm]{Dynalist.png}
+ \end{center}
+ \caption{Dynalist}
+ \label{fig:b}
+\end{figure}
+\newpage
 %図の挿入をする予定
 \subsection{TEX}
 TeXとは,アメリカの著名な数学者にして計算機科学者であるDonald E. Knuthが作成した組版フリーソフトウェアである.TeX本体は,文字を配置する,基本的な組版作業に対応する命令を処理するものであり,命令だけを用いて文書を作成するのは効率的ではない.そこで多くの場合マクロセットと呼ばれる命令セットを用いて文書を作成している.
@@ -110,24 +124,54 @@ TeXとは,アメリカの著名な数学者にして計算機科学者であるD
 マクロとは,組版された文書の作成を容易にするために,複数の基本的な命令を組み合わせて作成された新たな命令である.
 マクロセットにはさまざまなものがあるが,もっとも有名でよく用いられているものが,アメリカの計算機科学者であるLeslieLamportが作成したLaTeXである.TeXで文書を作成するという場合,実際はこのLaTeXの命令を用いて作成することがほとんどである.
 
-また,日本語で書かれた文章をTeXで組版するため,(株)アスキーにおいてASCII日本語TeXが,日本電信電話公社においてNTT JTeXがそれぞれ開発されたことにより,日本においてもTeXが普及し現在に至っている\cite{ren3}.
+また,日本語で書かれた文章をTeXで組版するため,(株)アスキーにおいてASCII日本語TeXが,日本電信電話公社においてNTT JTeXがそれぞれ開発されたことにより,日本においてもTeXが普及し現在に至っている\cite{ren3}.実際の使用例を図\ref{fig:c}に示す.
+
 %図の挿入をする予定
+\begin{figure}[H]
+\begin{center}
+ \includegraphics[clip,width=110mm,height=110mm]{TEX.png}
+ \end{center}
+ \caption{TEX}
+ \label{fig:c}
+\end{figure}
 
 \subsection{Microsoft Word}
-WordとはMicrosoft社が提供する文章作成ソフトウェアである.Micosoft社がが販売するワープロソフトのことであり,ソフトウェアのパッケージ製品であるMicrosoft Officeの中でも,主要なソフトウェアの1つに挙げられる.また,文章作成だけでなく,図形描画やグラフ,アウトラインの作成など,豊富で様々な機能のを持つ.
+WordとはMicrosoft社が提供する文章作成ソフトウェアである.Micosoft社がが販売するワープロソフトのことであり,ソフトウェアのパッケージ製品であるMicrosoft Officeの中でも,主要なソフトウェアの1つに挙げられる.また,文章作成だけでなく,図形描画やグラフ,アウトラインの作成など,豊富で様々な機能のを持つ.実際の使用例を図\ref{fig:d}に示す.
+
 %図の挿入をする予定？いる？
+\begin{figure}[H]
+\begin{center}
+ \includegraphics[clip,width=150mm,height=120mm]{word.png}
+ \end{center}
+ \caption{Microsoft Word}
+ \label{fig:d}
+\end{figure}
+
 \newpage
 \subsection{マインドマップ}
-マインドマップとは,頭の中で自然に行っている思考のプロセスを反映したノート法である.イギリス人教育者であるトニー・ブザン (Tony Buzan)が1970年代に出演していたTV番組を始めとして様々な著作で「マインドマップ」という言葉が広め始めた\cite{ren4}.また,自由な思考,アイデアや情報の流れを中心となる概念から分岐させる形で描画した図である.描画することで,アイデアの整理,効果的なメモの作成,記憶の定着強化などを実現することが可能になる.%mainndomap zu 
+マインドマップとは,頭の中で自然に行っている思考のプロセスを反映したノート法である.イギリス人教育者であるトニー・ブザン (Tony Buzan)が1970年代に出演していたTV番組を始めとして様々な著作で「マインドマップ」という言葉が広め始めた\cite{ren4}.また,自由な思考,アイデアや情報の流れを中心となる概念から分岐させる形で描画した図である.描画することで,アイデアの整理,効果的なメモの作成,記憶の定着強化などを実現することが可能になる.
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[clip,width=150mm,height=50mm]{maindmap.png}
+\end{center}
+ \caption{PWAの例}
+ \label{fig:e}
+\end{figure}
+\newpage
 
 \newpage
-\section{実装技術}
-\subsection{PWAとは}
+\section{PWAについて}
+
 PWA(Progressive Web Apps)とはモバイルサイト上でネイティブアプリのようなユーザー体験を提供する技術であり,ウェブとアプリの両方の良さを兼ね備えている.具体的にはインストールが必要なく,ホーム画面へのアイコン追加やプッシュ通知の可能であり,ユーザーとの接触機会を増やすことができる.また読み込み速度や表示の高速化,オフラインでの閲覧も可能であるなど様々なメリットが得られる.またアプリとの違いとして,アプリストアを経由してダウンロードやインストールする手間がなく,アプリの導入までの手順を短縮ができる.またプラットフォームごとに開発する必要もなく１つのPWAを構築するだけで,デバイスを問わずに一貫した内容を表示できるなど開発の自由度が高いことが特徴として言える\cite{ren6}.
-
-\subsection{PWAの利用例}
-
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[clip,width=150mm,height=80mm]{PWAgamen.pdf}
+\end{center}
+ \caption{アウトラインの作成例}
+ \label{fig:f}
+\end{figure}
 \newpage
+
 \section{本研究で開発したツールの概要}
 \subsection{実装理由}
 %実装した機能がなぜひつようであるのか？コンセプトを書く
@@ -139,10 +183,10 @@ PWA(Progressive Web Apps)とはモバイルサイト上でネイティブアプ�
 \subsection{実装した機能について}
 本ツールで開発した機能は以下の４つの機能の開発を行った．
 \begin{description}
-  \item[1-1] 主張と根拠の明確化
-  \item[1-2] 課題に対する疑問とその答えの記入
-  \item[1-3] 論理的な構成の整理
-  \item[1-4] 参考文献の管理
+  \item[\textcircled{\scriptsize 1}]主張と根拠の明確化
+  \item[\textcircled{\scriptsize 2}]課題に対する疑問とその答えの記入
+  \item[\textcircled{\scriptsize 3}]論理的な構成の整理
+  \item[\textcircled{\scriptsize 4}]参考文献の管理
  \end{description}
 %実際の画面を画像としてはる
 
@@ -158,12 +202,115 @@ PWA(Progressive Web Apps)とはモバイルサイト上でネイティブアプ�
 
 \subsubsection{参考文献の管理}
 文章を作成する際下調べなどで行った引用した文献や本などを確認, 整理する機能にした.ここでは閲覧したサイトや検索した文献のWebページなどのURLを管理することや何章で扱う参考文献であるかを明確に表示することで参考文献の管理をしやすくするためこのような機能にした.
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[clip,width=150mm,height=80mm]{pp01.pdf}
+\end{center}
+ \caption{アカデミックアウトラインツール}
+ \label{fig:g}
+\end{figure}
 
 \newpage
 
 \subsection{利用方法}
 %図を使っての利用方法の説明を行う．
-本制作で開発したツールの画面構成と利用方法を示す.
+\subsubsection{課題名の記入欄}
+課題名の記入欄では論文のテーマやレポート課題の課題名などを記入する.
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[clip,width=150mm,height=20mm]{00kadai.png}
+\end{center}
+ \caption{課題名の記入欄}
+ \label{fig:h}
+\end{figure}
+
+\subsubsection{主張の記入欄}
+主張の記入欄では,テーマや課題に対しての自分が考える主張を記入する.
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[clip,width=150mm,height=15mm]{01shucho.png}
+\end{center}
+ \caption{主張の記入欄}
+ \label{fig:i}
+\end{figure}
+\newpage
+\subsubsection{根拠の記入欄}
+根拠の表示のボタンを押すことで根拠を記入するテキストボックスが表示される.下調べを行った際の根拠となるものを記入していく.またアウトラインを作成し,整理していく中で不必要になったものがあった際には消すボタンでその根拠を消すことができる.
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[clip,width=150mm,height=10mm]{02konkyo.png}
+\end{center}
+ \caption{根拠}
+ \label{fig:j}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[clip,width=150mm,height=30mm]{03konkuo.png}
+\end{center}
+ \caption{主張の記入欄}
+ \label{fig:k}
+\end{figure}
+
+\newpage
+\subsubsection{問いと答えの記入欄}
+問と答えのボタンを押すことで,問いの記入と答えの記入欄が表示される.テーマや課題に対しての疑問や何を論じるのかを問いの部分に記入をする.またそれに対応する答えを記入する.書いた文章の整理を行うため,上と入れ替えるボタンを押すことで上下のテキストボックス内のないよを入れ替えることができ,論理的なアウトラインの作成を支援することができる.
+
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[clip,width=150mm,height=15mm]{04qanda.png}
+\end{center}
+ \caption{主張の記入欄}
+ \label{fig:l}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[clip,width=150mm,height=100mm]{05qanda.png}
+\end{center}
+ \caption{主張の記入欄}
+ \label{fig:m}
+\end{figure}
+\newpage
+
+\subsubsection{参考文献の管理}
+参考文献のボタンを押すことで引用したサイトのURLなどを記入する欄が表示される.下調べの際に見た本やサイトを記入し管理をしておく.管理する際に何章で引用する文献なのか記入しておく.また参考文献の記入欄を追加する際は,参考文献のボタンをもう一度押すことで,記入欄が増える.
+
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[clip,width=150mm,height=10mm]{06sankou.png}
+\end{center}
+ \caption{主張の記入欄}
+ \label{fig:n}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[clip,width=150mm,height=25mm]{07sankou.png}
+\end{center}
+ \caption{主張の記入欄}
+ \label{fig:o}
+\end{figure}
+
+\newpage
+\subsection{画面構成について}
+本ツールはPCでの作業だけでなく,移動時間などの隙間時間での利用も考えたため,スマートフォンでの利用もすることができる.そのため機能は変わらないがPC版とスマートフォン版とipad版の3種類に対応できるよう画面サイズに合わせた画面構成を行った.以下の図がそれぞれPC版とスマートフォン版,ipad版である.
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[clip,width=150mm,height=80mm]{08gamen.png}
+\end{center}
+ \caption{主張の記入欄}
+ \label{fig:p}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[clip,width=120mm,height=55mm]{pp00.pdf}
+\end{center}
+ \caption{主張の記入欄}
+ \label{fig:q}
+\end{figure}
+
 \newpage
 
 \section*{謝辞}
