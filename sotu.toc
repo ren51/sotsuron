@@ -28,11 +28,12 @@
 \contentsline {subsubsection}{\numberline {5.3.1}JavaScriptとは}{13}
 \contentsline {subsection}{\numberline {5.4}PWAについて}{14}
 \contentsline {subsubsection}{\numberline {5.4.1}ネイティブアプリについて}{15}
-\contentsline {section}{\numberline {6}本研究で開発したツールの概要}{15}
-\contentsline {subsection}{\numberline {6.1}実装理由}{15}
+\contentsline {subsubsection}{\numberline {5.4.2}Webアプリについて}{15}
+\contentsline {section}{\numberline {6}本研究で開発したツールの概要}{16}
+\contentsline {subsection}{\numberline {6.1}実装理由}{16}
 \contentsline {subsection}{\numberline {6.2}実装した機能について}{16}
 \contentsline {subsubsection}{\numberline {6.2.1}主張と根拠の明確化}{16}
-\contentsline {subsubsection}{\numberline {6.2.2}課題に対する疑問とその答えの記入}{16}
+\contentsline {subsubsection}{\numberline {6.2.2}課題に対する疑問とその答えの記入}{17}
 \contentsline {subsubsection}{\numberline {6.2.3}論理的な構成の整理}{17}
 \contentsline {subsubsection}{\numberline {6.2.4}参考文献の管理}{17}
 \contentsline {subsection}{\numberline {6.3}利用方法}{19}
