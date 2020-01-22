@@ -9,29 +9,38 @@
 \contentsline {section}{\numberline {3}アカデミックライティングについて}{5}
 \contentsline {subsection}{\numberline {3.1}アカデミックライティングとは}{5}
 \contentsline {subsection}{\numberline {3.2}アカデミックライティングの特徴}{5}
-\contentsline {subsection}{\numberline {3.3}なぜアカデミックライティングが必要がなのか}{5}
+\contentsline {subsection}{\numberline {3.3}なぜアカデミックライティングが必要がなのか}{6}
 \contentsline {subsection}{\numberline {3.4}作文・感想文との違い}{6}
 \contentsline {section}{\numberline {4}論文などの作成を支援するソフトウェアや手法の紹介}{7}
 \contentsline {subsection}{\numberline {4.1}アウトラインプロセッサ}{7}
 \contentsline {subsection}{\numberline {4.2}T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}}{8}
 \contentsline {subsection}{\numberline {4.3}Microsoft Word}{9}
 \contentsline {subsection}{\numberline {4.4}マインドマップ}{10}
-\contentsline {section}{\numberline {5}PWAについて}{11}
-\contentsline {section}{\numberline {6}本研究で開発したツールの概要}{12}
-\contentsline {subsection}{\numberline {6.1}実装理由}{12}
-\contentsline {subsection}{\numberline {6.2}開発言語について}{12}
-\contentsline {subsection}{\numberline {6.3}実装した機能について}{12}
-\contentsline {subsubsection}{\numberline {6.3.1}主張と根拠の明確化}{12}
-\contentsline {subsubsection}{\numberline {6.3.2}課題に対する疑問とその答えの記入}{13}
-\contentsline {subsubsection}{\numberline {6.3.3}論理的な構成の整理}{13}
-\contentsline {subsubsection}{\numberline {6.3.4}参考文献の管理}{13}
-\contentsline {subsection}{\numberline {6.4}利用方法}{14}
-\contentsline {subsubsection}{\numberline {6.4.1}課題名の記入欄}{14}
-\contentsline {subsubsection}{\numberline {6.4.2}主張の記入欄}{14}
-\contentsline {subsubsection}{\numberline {6.4.3}根拠の記入欄}{15}
-\contentsline {subsubsection}{\numberline {6.4.4}問いと答えの記入欄}{16}
-\contentsline {subsubsection}{\numberline {6.4.5}参考文献の管理}{17}
-\contentsline {subsection}{\numberline {6.5}画面構成について}{18}
-\contentsline {section}{謝辞}{19}
-\contentsline {section}{参考文献}{19}
-\contentsline {section}{付録}{20}
+\contentsline {section}{\numberline {5}開発言語と関連技術}{11}
+\contentsline {subsection}{\numberline {5.1}HTML}{11}
+\contentsline {subsubsection}{\numberline {5.1.1}HTMLについて}{11}
+\contentsline {subsubsection}{\numberline {5.1.2}HTMLの特徴}{11}
+\contentsline {subsubsection}{\numberline {5.1.3}HTML5について}{12}
+\contentsline {subsection}{\numberline {5.2}CSS}{12}
+\contentsline {subsubsection}{\numberline {5.2.1}CSSについて}{12}
+\contentsline {subsubsection}{\numberline {5.2.2}CSS3について}{13}
+\contentsline {subsection}{\numberline {5.3}JavaScript}{13}
+\contentsline {subsubsection}{\numberline {5.3.1}JavaScriptとは}{13}
+\contentsline {subsection}{\numberline {5.4}PWAについて}{14}
+\contentsline {section}{\numberline {6}本研究で開発したツールの概要}{15}
+\contentsline {subsection}{\numberline {6.1}実装理由}{15}
+\contentsline {subsection}{\numberline {6.2}実装した機能について}{15}
+\contentsline {subsubsection}{\numberline {6.2.1}主張と根拠の明確化}{15}
+\contentsline {subsubsection}{\numberline {6.2.2}課題に対する疑問とその答えの記入}{16}
+\contentsline {subsubsection}{\numberline {6.2.3}論理的な構成の整理}{16}
+\contentsline {subsubsection}{\numberline {6.2.4}参考文献の管理}{16}
+\contentsline {subsection}{\numberline {6.3}利用方法}{18}
+\contentsline {subsubsection}{\numberline {6.3.1}課題名の記入欄}{18}
+\contentsline {subsubsection}{\numberline {6.3.2}主張の記入欄}{18}
+\contentsline {subsubsection}{\numberline {6.3.3}根拠の記入欄}{19}
+\contentsline {subsubsection}{\numberline {6.3.4}問いと答えの記入欄}{20}
+\contentsline {subsubsection}{\numberline {6.3.5}参考文献の管理}{21}
+\contentsline {subsection}{\numberline {6.4}画面構成について}{22}
+\contentsline {section}{謝辞}{23}
+\contentsline {section}{参考文献}{23}
+\contentsline {section}{付録}{25}
