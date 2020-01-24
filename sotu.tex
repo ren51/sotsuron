@@ -4,6 +4,8 @@
 \usepackage{amsmath}
 \usepackage{float}
 \usepackage{url}
+\usepackage{moreverb}
+\usepackage[a4paper]{geometry}
 \begin{document}
 \begin{center}
 \thispagestyle{empty}
@@ -206,8 +208,7 @@ Webブラウザと統合しているJavaScriptの処理系ではDOM操作が規�
 
 \subsubsection{Webアプリについて}
 WebアプリとはGoogle ChromeやFirefoxなどのWebブラウザ上で動作するアプリケーションのことである.メリットとしてWebアプリはインストールの必要がなく，インターネット上で管理を行っているため,別の端末でアクセスしても動作が可能である点が挙げられる.デメリットとして，インターネットに接続されていなければ利用ができないことやネイティブアプリと比べると細かな操作をすることができない点が挙げられる.
-
-
+\newpage
 \subsection{PWAについて}
 PWA(Progressive Web Apps)とはWebサイトなどをスマートフォン向けアプリケーションのように動作を行うことが可能な技術でありる.具体的にはインストールが必要なく，ホーム画面へのアイコン追加やプッシュ通知などが可能であり，ユーザーとの接触機会を増やすことができる.また読み込み速度や表示の高速化，オフラインでの閲覧も可能であるなど様々なメリットが得られる.またアプリとの違いとして，アプリストアを経由してダウンロードやインストールする手間がなく，アプリの導入までの手順を短縮ができる.またプラットフォームごとに開発する必要もなく１つのPWAを構築するだけで，デバイスを問わずに一貫した内容を表示できるなど開発の自由度が高いことが特徴として言える\cite{ren6}.PWAを実装した本ツールのホーム画面を図\ref{fig:f}の右に起動後の画面を左に示す.
 \begin{figure}[h]
@@ -256,8 +257,23 @@ PWA(Progressive Web Apps)とはWebサイトなどをスマートフォン向け�
  \label{fig:g}
 \end{figure}
 \newpage
-\subsection{利用方法}
+\subsection{本ツールの利用方法}
+本ツールの利用目的は，論文やレポートなどのアカデミックライティングのアウトラインの作成を支援することである.そのため実際に文章を書くのは別のアプリケーションで行う.
+本章では7.2に記述されている，\textcircled{\scriptsize 1}〜\textcircled{\scriptsize  4}の4つの機能の利用方法を以下に示す.
+
 %図を使っての利用方法の説明を行う．
+\subsubsection{ホーム画面}
+図\ref{fig:r}は，本ツールの起動時の画面である.
+
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[clip,width=150mm,height=80mm]{figure/10outline.png}
+\end{center}
+ \caption{起動時の画面}
+ \label{fig:r}
+\end{figure}
+
+\newpage
 \subsubsection{課題名の記入欄}
 図\ref{fig:h}は課題名の記入欄であり，論文のテーマやレポートの課題名などを記入する.
 \begin{figure}[h]
@@ -277,6 +293,7 @@ PWA(Progressive Web Apps)とはWebサイトなどをスマートフォン向け�
  \caption{主張の記入欄}
  \label{fig:i}
 \end{figure}
+
 \newpage
 \subsubsection{根拠の記入欄}
 根拠の表示のボタンを押すことで根拠を記入するテキストボックスが表示される.下調べを行った際の根拠となるものを記入していく.またアウトラインを作成し，整理していく中で不必要になったものがあった際には消すボタンでその根拠を消すことができる.表示前を図\ref{fig:j}に表示後を図\ref{fig:k}に示す.
@@ -356,7 +373,7 @@ PWA(Progressive Web Apps)とはWebサイトなどをスマートフォン向け�
 \end{figure}
 
 \newpage
-\section*{結言}
+\section{結言}
 %背景
 大学で論文やレポートを書かなければならない大学生に対して，論理的な思考力や論理的文章作成能力の要求が高まっている．しかし,論文やレポートを書く際にアウトラインなどの事前準備をせずに文章の作成を行ってしまう学生が多く，論理的な文章にならないことが問題点として挙げられる.
 そのため，レポートの書き方の指導や修正を行うライティングセンターの設置などが進められているが継続的な利用が必要とされている.
@@ -369,7 +386,8 @@ PWA(Progressive Web Apps)とはWebサイトなどをスマートフォン向け�
 そこで本制作では，主張や根拠などが明確な一貫した論文やレポートを書くため，準備段階であるアカデミックアウトラインツールを開発することを目的としている．
 
 %結果
-本制作を行い論理的文章のアウトラインの作成を支援するツールの開発を行ったが，
+本制作を行い論理的文章のアウトラインの作成を支援するツールの開発を行った.
+\newpage
 \section*{謝辞}
 \addcontentsline{toc}{section}{謝辞}
 本制作の遂行および本論文の作成にあたり，多くの御助言とご指導を頂きました須田宇宙准教授に深く感謝の意を表します.
@@ -399,9 +417,70 @@ PWA(Progressive Web Apps)とはWebサイトなどをスマートフォン向け�
 \bibitem{ren9}田口　優希: "MeSH拡張のためのサーバ感通信アーキテクチャ"， 千葉工業大学卒業論文，2012
 
 \end{thebibliography}
-\newpage
-\section*{付録}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\newgeometry{left=2cm,bottom=2cm}
+\appendix
+\section*{付録}
+%1
 \addcontentsline{toc}{section}{付録}
+\section*{index.html}
+\label{index.html}
+\listinginput{1}{program/index.html}
+\newpage
+%2
+\section*{face01.css}
+\label{face01.css}
+\listinginput{1}{program/face01.css}
+\newpage
+%3
+\section*{index.css}
+\label{index.css}
+\listinginput{1}{program/index.css}
+\newpage
+
+%4
+\section*{indexmb.css}
+\label{indexmb.css}
+\listinginput{1}{program/indexmb.css}
+\newpage
+
+%5
+\section*{indexmbipad.css}
+\label{indexmbipad.css}
+\listinginput{1}{program/indexmbipad.css}
+\newpage
+
+%6
+\section*{ex2.js}
+\label{ex2.js}
+\listinginput{1}{program/ex2.js}
+\newpage
+
+%7
+\section*{nylon.js}
+\label{nylon.js}
+\listinginput{1}{program/nylon.js}
+\newpage
+
+%8
+\section*{page.js}
+\label{page.js}
+\listinginput{1}{program/page.js}
+\newpage
+
+%9
+\section*{serviceworker.js}
+\label{serviceworker.js}
+\listinginput{1}{program/serviceworker.js}
+\newpage
+
+%10
+\section*{manifest.json}
+\label{manifest.json}
+\listinginput{1}{program/manifest.json}
+\newpage
+
 
 \end{document}

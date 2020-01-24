@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ex2.js"></script>
+    <script src="nylon.js"></script>
+    <script src="page.js"></script>
+    <script src="sarvice_worker.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" type="text/css" media="(min-width: 640px)" href="index.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 640px)" href="index_mb.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 800px)" href="index_mb_ipad.css">
+    <link rel="stylesheet" type="text/css" href="face01.css">
+    <link rel="stylesheet" type="text/css" href="face01_mb.css">
+
+
+    <title>アウトラインプ作成ツール</title>
+
+    <script>
+            if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service_worker.js')
+        .then(function() {
+          console.log('Service worker registered!');
+        });
+    }
+    </script> 
+
+</head>
+
+<body>
+    <header class="hed">
+        <div class="face01hed">
+            アウトライン作成アウトラインツール
+        </div>
+    </header>
+<div class="savediv"><button class="savebtn">保存</button></div>
+    <div class="hed2">
+        <div class="oya01">
+            <div class="chi02"><label for="kadai">課題名：<textarea class="tex" cols="20" rows="1">課題名の記入</textarea></label>
+            </div>
+        </div>
+    </div>
+
+    <!--主張の部分-->
+    <p></p>
+    <div class="shu">
+        <form>
+            <label>主張</label>
+            <input class="chou" type="text" name="namae" id="shuchou">
+        </form>
+    </div>
+
+
+    <!--根拠の部分-->
+    <div class="kon_st_div">
+        <button id="b_kon" class="kon_st">根拠の表示</button>
+    </div>
+
+    <div id="kon_hontai" class="kon_hon"></div>
+
+    <template id="temp0">
+
+        <li class="kk">
+            <input type="text" name="konkon" class="textK" >
+            <button class="delete2">消す</button>
+        </li>
+    </template>
+
+    <!--問と答えの部分-->
+    <div class="panda_div">
+        <button id="b_qanda" class="btnpanda">問と答え</button>
+    </div>
+
+    <div id="qa_hontai" class="qa_hontai"></div>
+
+    <template id="temp1_noup">
+        <div class="qa">
+            <input type="text" name="dummy" class="textQ"> <button class="delete">消す</button>
+            <br>
+            <textarea name="dummy2" cols="50" rows="5" class="textA">もげもげ</textarea>
+            
+
+        </div>
+    </template>
+    <template id="temp1">
+        <div class="qa">
+            <input type="text" name="dummy" class="textQ"> <button class="delete">消す</button> <button
+                class="change">上と入れ替える</button>
+
+            <br>
+            <textarea name="dummy2" cols="50" rows="5" class="textA">もげもげ</textarea>
+        </div>
+    </template>
+
+    <!--参考文献-->
+    <div class="sanst_div">
+        <button id="san_start" class="sanst">参考文献の追加</button>
+    </div>
+
+    <div id="san_hontai" class="san_hon"></div>
+
+    <template id="temp3">
+
+        <li class="ss">
+            <input type="text" name="sansan" class="textS">
+            <button class="delete3">消す</button>
+        </li>
+    </template>
+
+
+</body>
+
+</html>

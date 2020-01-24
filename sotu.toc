@@ -13,37 +13,39 @@
 \contentsline {subsection}{\numberline {3.4}作文・感想文との違い}{6}
 \contentsline {section}{\numberline {4}論文などの作成を支援するソフトウェア紹介}{7}
 \contentsline {subsection}{\numberline {4.1}アウトラインプロセッサ}{7}
-\contentsline {subsection}{\numberline {4.2}T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}}{8}
-\contentsline {subsection}{\numberline {4.3}Microsoft Word}{9}
-\contentsline {section}{\numberline {5}マインドマップ}{11}
-\contentsline {subsection}{\numberline {5.1}マインドマップについて}{11}
-\contentsline {section}{\numberline {6}開発言語と関連技術}{12}
-\contentsline {subsection}{\numberline {6.1}HTML}{12}
-\contentsline {subsubsection}{\numberline {6.1.1}HTMLについて}{12}
-\contentsline {subsubsection}{\numberline {6.1.2}HTMLの特徴}{12}
-\contentsline {subsubsection}{\numberline {6.1.3}HTML5について}{13}
-\contentsline {subsection}{\numberline {6.2}CSS}{14}
-\contentsline {subsubsection}{\numberline {6.2.1}CSSについて}{14}
-\contentsline {subsubsection}{\numberline {6.2.2}CSS3について}{14}
-\contentsline {subsection}{\numberline {6.3}JavaScript}{14}
-\contentsline {subsubsection}{\numberline {6.3.1}JavaScriptとは}{14}
-\contentsline {subsubsection}{\numberline {6.3.2}ネイティブアプリについて}{15}
-\contentsline {subsubsection}{\numberline {6.3.3}Webアプリについて}{15}
-\contentsline {subsection}{\numberline {6.4}PWAについて}{15}
-\contentsline {section}{\numberline {7}本研究で開発したツールの概要}{17}
-\contentsline {subsection}{\numberline {7.1}実装理由}{17}
-\contentsline {subsection}{\numberline {7.2}実装した機能について}{17}
-\contentsline {subsubsection}{\numberline {7.2.1}主張と根拠の明確化}{17}
-\contentsline {subsubsection}{\numberline {7.2.2}課題に対する疑問とその答えの記入}{18}
-\contentsline {subsubsection}{\numberline {7.2.3}論理的な構成の整理}{18}
-\contentsline {subsubsection}{\numberline {7.2.4}参考文献の管理}{18}
-\contentsline {subsection}{\numberline {7.3}利用方法}{20}
-\contentsline {subsubsection}{\numberline {7.3.1}課題名の記入欄}{20}
-\contentsline {subsubsection}{\numberline {7.3.2}主張の記入欄}{20}
-\contentsline {subsubsection}{\numberline {7.3.3}根拠の記入欄}{21}
-\contentsline {subsubsection}{\numberline {7.3.4}問いと答えの記入欄}{22}
-\contentsline {subsubsection}{\numberline {7.3.5}参考文献の管理}{23}
-\contentsline {subsection}{\numberline {7.4}画面構成について}{24}
-\contentsline {section}{謝辞}{25}
-\contentsline {section}{参考文献}{25}
-\contentsline {section}{付録}{27}
+\contentsline {subsection}{\numberline {4.2}T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}}{9}
+\contentsline {subsection}{\numberline {4.3}Microsoft Word}{10}
+\contentsline {section}{\numberline {5}マインドマップ}{12}
+\contentsline {subsection}{\numberline {5.1}マインドマップについて}{12}
+\contentsline {section}{\numberline {6}開発言語と関連技術}{13}
+\contentsline {subsection}{\numberline {6.1}HTML}{13}
+\contentsline {subsubsection}{\numberline {6.1.1}HTMLについて}{13}
+\contentsline {subsubsection}{\numberline {6.1.2}HTMLの特徴}{13}
+\contentsline {subsubsection}{\numberline {6.1.3}HTML5について}{14}
+\contentsline {subsection}{\numberline {6.2}CSS}{15}
+\contentsline {subsubsection}{\numberline {6.2.1}CSSについて}{15}
+\contentsline {subsubsection}{\numberline {6.2.2}CSS3について}{15}
+\contentsline {subsection}{\numberline {6.3}JavaScript}{15}
+\contentsline {subsubsection}{\numberline {6.3.1}JavaScriptとは}{15}
+\contentsline {subsubsection}{\numberline {6.3.2}ネイティブアプリについて}{16}
+\contentsline {subsubsection}{\numberline {6.3.3}Webアプリについて}{16}
+\contentsline {subsection}{\numberline {6.4}PWAについて}{17}
+\contentsline {section}{\numberline {7}本研究で開発したツールの概要}{18}
+\contentsline {subsection}{\numberline {7.1}実装理由}{18}
+\contentsline {subsection}{\numberline {7.2}実装した機能について}{18}
+\contentsline {subsubsection}{\numberline {7.2.1}主張と根拠の明確化}{18}
+\contentsline {subsubsection}{\numberline {7.2.2}課題に対する疑問とその答えの記入}{19}
+\contentsline {subsubsection}{\numberline {7.2.3}論理的な構成の整理}{19}
+\contentsline {subsubsection}{\numberline {7.2.4}参考文献の管理}{19}
+\contentsline {subsection}{\numberline {7.3}本ツールの利用方法}{20}
+\contentsline {subsubsection}{\numberline {7.3.1}ホーム画面}{20}
+\contentsline {subsubsection}{\numberline {7.3.2}課題名の記入欄}{21}
+\contentsline {subsubsection}{\numberline {7.3.3}主張の記入欄}{21}
+\contentsline {subsubsection}{\numberline {7.3.4}根拠の記入欄}{22}
+\contentsline {subsubsection}{\numberline {7.3.5}問いと答えの記入欄}{23}
+\contentsline {subsubsection}{\numberline {7.3.6}参考文献の管理}{24}
+\contentsline {subsection}{\numberline {7.4}画面構成について}{25}
+\contentsline {section}{\numberline {8}結言}{26}
+\contentsline {section}{謝辞}{27}
+\contentsline {section}{参考文献}{27}
+\contentsline {section}{付録}{35}
