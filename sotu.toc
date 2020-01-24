@@ -11,7 +11,7 @@
 \contentsline {subsection}{\numberline {3.2}アカデミックライティングの特徴}{6}
 \contentsline {subsection}{\numberline {3.3}なぜアカデミックライティングが必要がなのか}{7}
 \contentsline {subsection}{\numberline {3.4}作文・感想文との違い}{7}
-\contentsline {section}{\numberline {4}論文などの作成を支援するソフトウェア紹介}{8}
+\contentsline {section}{\numberline {4}論文などの作成をするソフトウェア紹介}{8}
 \contentsline {subsection}{\numberline {4.1}アウトラインプロセッサ}{8}
 \contentsline {subsection}{\numberline {4.2}T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}}{9}
 \contentsline {subsection}{\numberline {4.3}Microsoft Word}{11}
@@ -25,11 +25,14 @@
 \contentsline {subsection}{\numberline {6.2}CSS}{15}
 \contentsline {subsubsection}{\numberline {6.2.1}CSSについて}{15}
 \contentsline {subsubsection}{\numberline {6.2.2}CSS3について}{15}
+\contentsline {subsubsection}{\numberline {6.2.3}MediaQueryについて}{15}
 \contentsline {subsection}{\numberline {6.3}JavaScript}{15}
 \contentsline {subsubsection}{\numberline {6.3.1}JavaScriptとは}{15}
 \contentsline {subsubsection}{\numberline {6.3.2}ネイティブアプリについて}{16}
 \contentsline {subsubsection}{\numberline {6.3.3}Webアプリについて}{16}
 \contentsline {subsection}{\numberline {6.4}PWAについて}{17}
+\contentsline {subsubsection}{\numberline {6.4.1}サービスワーカーついて}{18}
+\contentsline {subsection}{\numberline {6.5}ローカルストレージについて}{18}
 \contentsline {section}{\numberline {7}本研究で開発したツールの概要}{18}
 \contentsline {subsection}{\numberline {7.1}実装理由}{18}
 \contentsline {subsection}{\numberline {7.2}実装した機能について}{18}
