@@ -25,30 +25,31 @@
 \contentsline {subsection}{\numberline {6.2}CSS}{15}
 \contentsline {subsubsection}{\numberline {6.2.1}CSSについて}{15}
 \contentsline {subsubsection}{\numberline {6.2.2}CSS3について}{15}
-\contentsline {subsubsection}{\numberline {6.2.3}MediaQueryについて}{15}
-\contentsline {subsection}{\numberline {6.3}JavaScript}{15}
-\contentsline {subsubsection}{\numberline {6.3.1}JavaScriptとは}{15}
-\contentsline {subsubsection}{\numberline {6.3.2}ネイティブアプリについて}{16}
-\contentsline {subsubsection}{\numberline {6.3.3}Webアプリについて}{16}
-\contentsline {subsection}{\numberline {6.4}PWAについて}{17}
-\contentsline {subsubsection}{\numberline {6.4.1}サービスワーカーついて}{18}
-\contentsline {subsection}{\numberline {6.5}ローカルストレージについて}{18}
-\contentsline {section}{\numberline {7}本研究で開発したツールの概要}{18}
-\contentsline {subsection}{\numberline {7.1}実装理由}{18}
-\contentsline {subsection}{\numberline {7.2}実装した機能について}{18}
-\contentsline {subsubsection}{\numberline {7.2.1}主張と根拠の明確化}{18}
-\contentsline {subsubsection}{\numberline {7.2.2}課題に対する疑問とその答えの記入}{19}
-\contentsline {subsubsection}{\numberline {7.2.3}論理的な構成の整理}{19}
-\contentsline {subsubsection}{\numberline {7.2.4}参考文献の管理}{19}
-\contentsline {subsection}{\numberline {7.3}本ツールの利用方法}{21}
-\contentsline {subsubsection}{\numberline {7.3.1}ホーム画面}{21}
-\contentsline {subsubsection}{\numberline {7.3.2}課題名の記入欄}{22}
-\contentsline {subsubsection}{\numberline {7.3.3}主張の記入欄}{22}
-\contentsline {subsubsection}{\numberline {7.3.4}根拠の記入欄}{23}
-\contentsline {subsubsection}{\numberline {7.3.5}問いと答えの記入欄}{24}
-\contentsline {subsubsection}{\numberline {7.3.6}参考文献の管理}{25}
-\contentsline {subsection}{\numberline {7.4}画面構成について}{26}
-\contentsline {section}{\numberline {8}結言}{27}
-\contentsline {section}{謝辞}{28}
-\contentsline {section}{参考文献}{28}
-\contentsline {section}{付録}{30}
+\contentsline {subsubsection}{\numberline {6.2.3}メディアクエリについて}{15}
+\contentsline {subsection}{\numberline {6.3}JavaScript}{16}
+\contentsline {subsubsection}{\numberline {6.3.1}JavaScriptとは}{16}
+\contentsline {subsubsection}{\numberline {6.3.2}ネイティブアプリについて}{17}
+\contentsline {subsubsection}{\numberline {6.3.3}Webアプリについて}{17}
+\contentsline {subsection}{\numberline {6.4}PWAについて}{18}
+\contentsline {subsection}{\numberline {6.5}ローカルストレージについて}{19}
+\contentsline {subsubsection}{\numberline {6.5.1}ローカルストレージとは}{19}
+\contentsline {subsubsection}{\numberline {6.5.2}ローカルストレージ利用例}{19}
+\contentsline {section}{\numberline {7}本研究で開発したツールの概要}{21}
+\contentsline {subsection}{\numberline {7.1}実装理由}{21}
+\contentsline {subsection}{\numberline {7.2}実装した機能について}{21}
+\contentsline {subsubsection}{\numberline {7.2.1}主張と根拠の明確化}{21}
+\contentsline {subsubsection}{\numberline {7.2.2}課題に対する疑問とその答えの記入}{22}
+\contentsline {subsubsection}{\numberline {7.2.3}論理的な構成の整理}{22}
+\contentsline {subsubsection}{\numberline {7.2.4}参考文献の管理}{22}
+\contentsline {subsection}{\numberline {7.3}本ツールの利用方法}{24}
+\contentsline {subsubsection}{\numberline {7.3.1}ホーム画面}{24}
+\contentsline {subsubsection}{\numberline {7.3.2}課題名の記入欄}{25}
+\contentsline {subsubsection}{\numberline {7.3.3}主張の記入欄}{25}
+\contentsline {subsubsection}{\numberline {7.3.4}根拠の記入欄}{26}
+\contentsline {subsubsection}{\numberline {7.3.5}問いと答えの記入欄}{27}
+\contentsline {subsubsection}{\numberline {7.3.6}参考文献の管理}{28}
+\contentsline {subsection}{\numberline {7.4}画面構成について}{29}
+\contentsline {section}{\numberline {8}結言}{30}
+\contentsline {section}{謝辞}{31}
+\contentsline {section}{参考文献}{31}
+\contentsline {section}{付録}{33}

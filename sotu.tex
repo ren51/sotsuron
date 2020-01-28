@@ -6,6 +6,26 @@
 \usepackage{url}
 \usepackage{moreverb}
 \usepackage[a4paper]{geometry}
+\usepackage{listings,jlisting}
+\lstset{%
+  language={C},
+  basicstyle={\small},%
+  identifierstyle={\small},%
+  commentstyle={\small\itshape},%
+  keywordstyle={\small\bfseries},%
+  ndkeywordstyle={\small},%
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},%
+  numbers=left,%
+  xrightmargin=0zw,%
+  xleftmargin=3zw,%
+  numberstyle={\scriptsize},%
+  stepnumber=1,
+  numbersep=1zw,%
+  lineskip=-0.5ex%
+}
 \begin{document}
 \begin{center}
 \thispagestyle{empty}
@@ -195,8 +215,26 @@ File APIやWeb Workerの様なプラグインがあっても実現できなか�
 CSSとはCascading Style Sheet の略称であり，HTMLなどのウェブページのスタイルを指定するための言語である.ウェブページを装飾する際のスタイルシート言語の1つであり，CSSが一般的に利用されている.ウェブページに書かれた各要素の装飾を指定することができ，スクリーンに表示される色やサイズ，レイアウトなどをCSSで指定することが可能である.
 \subsubsection{CSS3について}
 CSS3とは単一の規格ではなく，「CSS Color Module Level3」など機能単位で策定される方針に変更され，それらを総称してCSS3と呼ばれている.
-\subsubsection{MediaQueryについて}
+\subsubsection{メディアクエリについて}
 %調べる
+スマートフォンやタブレットの登場により，PC以外の端末でWebサイトを見る機会が増えているため，端末に合わせて表示する必要がある.そこで，端末の種類や画面の解像度などに応じてサイトやアプリの表示を変更することが可能な，メディアクエリが利用されている\cite{ren9}.
+
+利用方法を以下に示す.またHTML側のビューポートの設定が以下のように記述されていることを前提とする.
+\begin{lstlisting}[caption=ほげほげ,label=s1]
+<meta name="viewport" content="width=device-width">
+  \end{lstlisting}
+
+HTMLファイルでふぁいるを読み込みメディアクエリを利用する方法は，デバイスによって読み込むファイル自体を振り分け，HTML側で以下のように記述する.例として今回は横幅が480pxまでのデバイスのみ，index.cssというファイルを読み込む
+\begin{lstlisting}[caption=ファイルを読み込む,label=s2]
+ <link rel="stylesheet" type="text/css" media="(max-width: 480px)" href="index.css">  \end{lstlisting}
+ 
+次に，CSS内でに記述を行う.CSSのファイル内の先頭に以下記述を行い｛｝内にスタイルの記述を行う.
+\begin{lstlisting}[caption=CSSの記述例,label=s3]
+@media print, screen and (max-width: 480px){
+cssの記述
+}
+\end{lstlisting}
+
 \subsection{JavaScript}
 \subsubsection{JavaScriptとは}
 Netscape Communications社が開発した，プロトタイプベースのオブジェクト指向スクリプト言語である．Webブラウザにおいて，従来は印刷物のような静的な表現しかできなかったWebページに動きや対話性を付加することを目的に開発され，主要なWebブラウザに搭載された．しかし，各社の実装には微妙な違いがあり，Webブラウザによって使えない機能や，同じプログラムでも挙動が異るなどの問題があった．そのため，国際標準化団体であるEcmaインターナショナルによって中核的な仕様がECMAScriptとして標準化された．
@@ -223,8 +261,40 @@ PWA(Progressive Web Apps)とはWebサイトなどをスマートフォン向け�
  \label{fig:f}
 \end{figure}
 \newpage
-\subsubsection{サービスワーカーついて}
+
 \subsection{ローカルストレージについて}
+\subsubsection{ローカルストレージとは}
+ローカルストレージ(localStorage)とはWebブラウザにデータを保存する仕組みであり， HTML5ではWebStorageというローカル環境であるWebブラウザ側でデータを保存することが可能な仕組みの中の１つである. ローカルストレージは1つのオリジンに対して、数MB（2〜10MBと各ブラウザによって異なる）までデータを保存でき、ページを閉じても保存したデータは保持される.
+\subsubsection{ローカルストレージ利用例}
+ローカルストレージの利用方法としてJavaScriptを用いた記述例を以下に示す.
+保存するデータはkeyとvalueの組み合わせによって保存される.また，1つのkeyに対して複数保存を行う場合は，JSON形式の文字列に変換する必要があるため，JSON.stringify()メソッドを用いて記述を行う.Web上での表示例を図\ref{fig:z}に示す.
+\begin{lstlisting}[caption=利用例,label=s4]
+//localStorageにデータを保存する
+let data =localStorage.setItem('キー' , 'ああああ');
+
+//複数保存する例
+var Jdata ={
+        data1: document.querySelector('#keysave').value,
+        data2: document.querySelector('#save').value
+    };
+    localStorage.setItem("deku" , JSON.stringify(Jdata));
+ 
+//確認用
+console.log(data);
+console.log(Jdata);
+
+localStorageからデータを削除する
+//localStorage.removeItem("キー");
+\end{lstlisting}
+\newpage
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[clip,width=150mm,height=50mm]{figure/11localeST.png}
+\end{center}
+ \caption{localStorageの表示例}
+ \label{fig:z}
+\end{figure}
+\newpage
 
 \section{本研究で開発したツールの概要}
 \subsection{実装理由}
@@ -420,6 +490,7 @@ PWA(Progressive Web Apps)とはWebサイトなどをスマートフォン向け�
 
 \bibitem{ren8}大嶋　泰史:"HTML５に対応した仮想座標グラフィックライブラリの構築"，千葉工業大学卒業論文，2012
 \bibitem{ren9}田口　優希: "MeSH拡張のためのサーバ感通信アーキテクチャ"， 千葉工業大学卒業論文，2012
+\bibitem{ren9} WEMO.tech:"CSSでメディアクエリ(Media Queries)の基本的な書き方、記述の意味を理解し、「何となく使う」を卒業する。"\url{https://wemo.tech/839}
 
 \end{thebibliography}
 
